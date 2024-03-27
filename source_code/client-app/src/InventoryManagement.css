@@ -1,0 +1,70 @@
+.inventory-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .item-form input, .item-form button {
+    margin: 5px 0;
+  }
+  
+  .item-list {
+    margin-top: 20px;
+  }
+  
+  .item {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-details p {
+    margin: 5px 0;
+  }
+  
+  .item-actions button {
+    margin-left: 10px;
+  }
+  
+  .update-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .update-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #da190b;
+  }
+  
+  .save-btn {
+    background-color: #008CBA; /* Blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-btn:hover {
+    background-color: #005f73;
+  }
+  
