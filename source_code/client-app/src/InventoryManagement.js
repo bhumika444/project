@@ -15,7 +15,7 @@ function InventoryManagement() {
   }, []);
 
   const fetchData = async () => {
-    const response = await fetch('http://ec2-3-16-159-183.us-east-2.compute.amazonaws.com:3001/api/inventory');
+    const response = await fetch('http://ec2-18-221-130-93.us-east-2.compute.amazonaws.com:3001/api/inventory');
     const data = await response.json();
     setInventoryItems(data);
   };
@@ -32,7 +32,7 @@ function InventoryManagement() {
       image: itemImage,
     };
 
-    const response = await fetch('http://ec2-3-16-159-183.us-east-2.compute.amazonaws.com:3001/api/inventory', {
+    const response = await fetch('http://ec2-18-221-130-93.us-east-2.compute.amazonaws.com:3001/api/inventory', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newItem),
@@ -60,7 +60,7 @@ function InventoryManagement() {
       return;
     }
 
-    const response = await fetch(`http://ec2-3-16-159-183.us-east-2.compute.amazonaws.com:3001/api/inventory/${id}`, {
+    const response = await fetch(`http://ec2-18-221-130-93.us-east-2.compute.amazonaws.com:3001/api/inventory/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name: editName, quantity: Number(editQuantity) }),
@@ -75,7 +75,7 @@ function InventoryManagement() {
   };
 
   const handleDeleteItem = async (id) => {
-    const response = await fetch(`http://ec2-3-16-159-183.us-east-2.compute.amazonaws.com:3001/api/inventory/${id}`, {
+    const response = await fetch(`http://ec2-18-221-130-93.us-east-2.compute.amazonaws.com:3001/api/inventory/${id}`, {
       method: 'DELETE',
     });
 
