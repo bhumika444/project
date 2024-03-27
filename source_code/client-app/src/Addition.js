@@ -11,7 +11,7 @@ function Addition() {
     setClientSum(sum);
 
     // Call API to calculate sum on the server-side
-    fetch('http://localhost:3001/api/add', {
+    fetch('http://http://ec2-3-133-144-19.us-east-2.compute.amazonaws.com/:3001/api/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
